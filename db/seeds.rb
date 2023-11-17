@@ -29,9 +29,9 @@ Movie.create(title: "Ocean's Eight",
   rating: 7.0)
 
 
-List.create(name: "Comedy")
-List.create(name: "Action")
-List.create(name: "Drama")
-List.create(name: "Horror")
+# List.create(name: "Comedy")
+# List.create(name: "Action")
+# List.create(name: "Drama")
+# List.create(name: "Horror")
 
 puts "Finished!"
