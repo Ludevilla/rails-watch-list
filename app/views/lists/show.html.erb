@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h2>List of <%= @list.name %></h2>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <% @list.bookmarks.each do|bookmark| %>
+      <%= bookmark.movie.title %>
+      <%= bookmark.comment %>
+      <% end %>
+    </div>
+  </div>
+  <%= link_to "Add a movie", new_list_bookmark_path(@list), class:"btn btn-primary" %>
+  <%= link_to "Back to list", lists_path, class:"btn btn-primary" %>
+</div>
